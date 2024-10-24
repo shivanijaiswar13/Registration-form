@@ -12,14 +12,20 @@ display: flex;
 align-items: center;
 justify-content: center;
 min-height: 100vh;
-background: ;
+background: url(image1.jpg);
+background-size: cover;
+background-position: center;
 }
 .wrapper{
     width: 750px;
-    background: purple;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     color: #fff;
     padding: 40px 35px 55px;
+    margin: 0 10px;
 }
 .wrapper h1{
     font-size: 36px;
@@ -31,12 +37,12 @@ background: ;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: #9377d4;
+    
 }
 .input-field{
     position: relative;
     width: 48%;
-    background: #d477b8;
+   
     margin: 13px 0;
 }
 .input-field input{
@@ -80,4 +86,18 @@ background: ;
     font-size: 16px;
     color: #333;
     font-weight: 600;
+    transition: all 50ms ease-in-out;
+}
+.btn:focus{
+    background-color:#0a285b ;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+}
+@media(max-width:576px) {
+    .input-field{
+        width: 100%;
+        margin: 10px 0;
+    }
+    
 }
